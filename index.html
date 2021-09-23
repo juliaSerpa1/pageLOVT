@@ -1,94 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVT</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Desafio figma</title>
+
 </head>
+
 <body>
 
-    <header class="header">
-        <nav>
-            <a href="index.html"><img src="/imagens/lovt.png" alt="logo"></a></li>
-            <a href="index.html"><img src="/imagens/logo.png" alt="texto"></a>
-        </nav>                     
-        <nav>
-            <a href="index.html"><img src="/imagens/menu.png" alt="menu mobile"></a>
-        </nav>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LOVT</h1>
+                <h2>You Love, <br>
+                    your loft!</h2>
+            </div>
+
+            <button class="menu-toggle">☰</button>
+        </div>
     </header>
 
-    <section class="futurocarousel">
-        <div>
-            <img src="/imagens/carrosel.png"> 
-        </div>
-    </section>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="slide">
+                    <img src="img/slider-image.png" alt="Foto do loft">
+                </div>
 
-    <section class="produtos">
-        <div>
-            <img src="/imagens/conteporaneo.png">
-            <h2>$1.200</h2>
-            <h3>
-                Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa
-                </h3>
-        </div>
-
-        <div>
-            <img src="/imagens/arquitetonio.png">
-            <h2>$2.000</h2>
-            <h3>
-                Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.
-            </h3>
-        </div>
-    </section>
-
-    <h1>Your Style</h1>
-
-    <section class="estilos">
-        <div>
-            <ul>
-                <li>
-                    <img src="/imagens/industrial.png">
-                </li>
-                <li>
-                    <img src="/imagens/moderna.png">
-                </li>
-                <li>
-                    <img src="/imagens/classsica.png">
-                </li>
-            </ul> 
-        </div>
-    </section>
-    <footer class="footer">
-            <nav>
-                <h4></h4>
-            </nav>
-
-            <nav>
-                <h5">LOVT - You love, your loft!</br>Broad St,</br>Newark, NJ 07102 - USA</br>+1 (973) 854-555-548contact@lovtrealstate.com
-                    </h5>
-            </nav>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/digitalhousebrasil">
-                        <img src="/imagens/facebook.png" alt="Icone Facebook">
+                <div class="setas">
+                    <a href="#" class="left" title="anterior">
+                        <img src="img/seta-2.svg" alt="Anterior">
                     </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.instagram.com/digitalhousebrasil/">
-                        <img src="/imagens/instagram.png" alt="Icone Instagram">
+                    <a href="#" class="right" title="próximo">
+                        <img src="img/seta-1.svg" alt="Próximo">
                     </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.linkedin.com/school/digital-house-brasil/mycompany/">
-                        <img src="/imagens/whatsapp.png" alt="Icone Whatsapp">
-                    </a>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <article>
+                    <div class="thumb" style="background-image: url('img/project-1.png');"></div>
+                    <div class="info">
+                        <div class="price-tag">
+                            <p class="price">$12.000</p>
+                            <p class="tag tag-new">NEW</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse sunt ad voluptatem,
+                            quo unde provident magnam molestias voluptatibus numquam porro itaque placeat voluptatum
+                            adipisci ab, enim eligendi nam consequuntur?</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="thumb" style="background-image: url('img/project-2.png');"></div>
+                    <div class="info">
+                        <div class="price-tag">
+                            <p class="price">$12.000</p>
+                            <p class="tag tag-sale">SALE</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse sunt ad voluptatem,
+                            quo unde provident magnam molestias voluptatibus numquam porro itaque placeat voluptatum
+                            adipisci ab, enim eligendi nam consequuntur?</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="styles">
+            <div class="container">
+                <h2>Your Style</h2>
+
+                <article style="background-image: url('img/industrial.png');">
+                    <h3>Industrial</h3>
+                </article>
+
+                <article style="background-image: url('img/modern.png');">
+                    <h3>Modern</h3>
+                </article>
+
+                <article style="background-image: url('img/classic.png');">
+                    <h3>Classic</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <form action="form_sucesso.html">
+                    <label for="input_nome">Nome</label>
+                    <input type="text" name="nome" id="input_nome" placeholder="Insira seu nome completo" required>
+
+                    <label for="input_email">Email</label>
+                    <input type="email" name="email" id="input_email" placeholder="Insira seu email principal" required>
+
+                    <label for="input_mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="input_mensagem" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="mapa">
+            <iframe
+            src="https://www.google.com/maps/place/Ibirapuera,+S%C3%A3o+Paulo+-+SP/@-23.5856199,-46.6669873,16z/data=!3m1!4b1!4m5!3m4!1s0x94ce59e6f06b0f89:0x43617829f701baf6!8m2!3d-23.5836023!4d-46.6644988?hl=pt-BR"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="informacoes">
+            <p>LOVT - You love, your loft!</p>
+
+            <p>Broad St, <br>
+                Newark, NJ 07102 - USA</p>
+
+            <p>
+                <a href="tel:+55(00)00000000">+1 (000)00000000</a>
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=510000000000ola">
+                    (WhatsApp)</a>
+            </p>
+
+            <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
+        </div>
     </footer>
-
-
-
 </body>
-</html>             
+
+</html>
