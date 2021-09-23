@@ -1,1 +1,1 @@
-Projeto desenvolvido com a utilização da plataforma figma em sala.
+Template desenvolvido com a utilização do figma.
